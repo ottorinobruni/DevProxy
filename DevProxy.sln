@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevProxy.WebApp", "DevProxy.WebApp\DevProxy.WebApp.csproj", "{28D06DE9-5009-4E97-800B-CF269D3D7DC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevProxy.API", "DevProxy.API\DevProxy.API.csproj", "{330A5C82-8EB2-4719-B521-DAC4B1B10002}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28D06DE9-5009-4E97-800B-CF269D3D7DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D06DE9-5009-4E97-800B-CF269D3D7DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D06DE9-5009-4E97-800B-CF269D3D7DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D06DE9-5009-4E97-800B-CF269D3D7DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330A5C82-8EB2-4719-B521-DAC4B1B10002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330A5C82-8EB2-4719-B521-DAC4B1B10002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330A5C82-8EB2-4719-B521-DAC4B1B10002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330A5C82-8EB2-4719-B521-DAC4B1B10002}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57C3BF58-89B9-43D3-BAE0-8FF9BB6C694C}
+	EndGlobalSection
+EndGlobal
