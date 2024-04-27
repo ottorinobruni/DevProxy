@@ -1,4 +1,4 @@
-# DevProxy: Enhancing Application Reliability
+# Dev Proxy: Enhancing Client-Side API Reliability through Simulated Errors and Responses
 
 This repository contains the source code for the DevProxy project. DevProxy is a command-line tool provided by Microsoft aimed at enhancing the reliability of applications by simulating API interactions and identifying errors.
 
