@@ -12,9 +12,6 @@ builder.Services.AddHttpClient<IWeatherService, WeatherService>(client =>
     client.BaseAddress = new Uri("https://localhost:5002/");
 });
 
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

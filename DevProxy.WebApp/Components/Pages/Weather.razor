@@ -1,5 +1,6 @@
 ﻿@page "/weather"
 @using DevProxy.WebApp.Services
+@using System.Net
 @attribute [StreamRendering]
 
 <PageTitle>Weather</PageTitle>
@@ -36,15 +37,50 @@ else
         </tbody>
     </table>
 }
+<p>
+    <label style="color: red;">@errorMessage</label>
+</p>
+
 
 @code {
     [Inject]
     public IWeatherService WeatherService { get; set; }
 
-    private IEnumerable<WeatherForecast> forecasts;
+    private IEnumerable<WeatherForecast>? forecasts;
+
+    public string? errorMessage;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = (await WeatherService.GetWeatherForecasts()).ToList();
+        errorMessage = "";
+        try
+        {
+            forecasts = (await WeatherService.GetWeatherForecasts()).ToList();
+        }
+        catch (HttpRequestException ex)
+        {
+            // Handle exceptions related to HTTP requests, such as 404 or 429
+            if (ex.StatusCode == HttpStatusCode.NotFound)
+            {
+                errorMessage = "Lost the forecast trail! 🗺️ Try again later";
+            }
+            else if (ex.StatusCode == HttpStatusCode.Forbidden)
+            {
+                errorMessage = "Access denied! 🔒 Try another path.";
+            }
+            else if (ex.StatusCode == HttpStatusCode.TooManyRequests)
+            {
+                errorMessage = "Forecast frenzy! 🌪️ Try again soon.";
+            }
+            else
+            {
+                errorMessage = "Mysterious forecast mishap! 🌌 Please retry later.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Forecast fiasco! 🌧️ Please try again later.";
+        }
     }
+
 }
