@@ -26,7 +26,7 @@ The project structure is organized as follows:
 - **DevProxy.sln:** Main solution file connecting both the web application and API projects.
 
 ## Article
-For more information on how to use DevProxy and its integration with your projects, please refer to our article: [Dev Proxy: Enhancing Client-Side API Reliability through Simulated Errors and Responses](https://www.ottorinobruni.com/devproxy-enhancing-client-side-api-reliability-through-simulated-errors-responses/).
+For more information on how to use DevProxy and its integration with your projects, please refer to the article: [Dev Proxy: Enhancing Client-Side API Reliability through Simulated Errors and Responses](https://www.ottorinobruni.com/devproxy-enhancing-client-side-api-reliability-through-simulated-errors-responses/).
 
 ## Getting Started
 
