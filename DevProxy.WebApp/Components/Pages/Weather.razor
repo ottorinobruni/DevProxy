@@ -72,6 +72,10 @@ else
             {
                 errorMessage = "Forecast frenzy! 🌪️ Try again soon.";
             }
+            else if (ex.StatusCode == HttpStatusCode.BadRequest)
+            {
+                errorMessage = "Bad Request! 🚫 Please check your request.";
+            }
             else
             {
                 errorMessage = "Mysterious forecast mishap! 🌌 Please retry later.";
