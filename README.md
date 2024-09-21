@@ -27,7 +27,7 @@ The project structure is organized as follows:
 - **mockserver branch**: Contains an example of how to integrate Postman Mock Servers to simulate API responses for faster frontend development.
 
 ## Article
-For more information on how to use DevProxy and its integration with your projects, please refer to the article: [Dev Proxy: Enhancing Client-Side API Reliability through Simulated Errors and Responses](https://www.ottorinobruni.com/devproxy-enhancing-client-side-api-reliability-through-simulated-errors-responses/) and [Simplify Blazor Frontend Development with Postman Mock Servers: Start Work Without Waiting for Backend]((https://www.ottorinobruni.com/simplify-blazor-frontend-development-with-postman-mock-servers-start-work-without-waiting-for-backend/)).
+For more information on how to use DevProxy and its integration with your projects, please refer to the article: [Dev Proxy: Enhancing Client-Side API Reliability through Simulated Errors and Responses](https://www.ottorinobruni.com/devproxy-enhancing-client-side-api-reliability-through-simulated-errors-responses/) and [Simplify Blazor Frontend Development with Postman Mock Servers: Start Work Without Waiting for Backend](https://www.ottorinobruni.com/simplify-blazor-frontend-development-with-postman-mock-servers-start-work-without-waiting-for-backend/)).
 .
 
 ## Getting Started
